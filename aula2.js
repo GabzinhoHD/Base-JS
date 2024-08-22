@@ -15,8 +15,11 @@ let area;
 if (forma === "Retangulo"){
     area = altura * largura
 }
-else{
+else if(forma === "triangulo"){
     area = (altura * largura) / 2;
+}
+else{
+    console.log("Deveria ser forma")
 }
 console.log(area);
 
@@ -27,6 +30,33 @@ console.log(area);
 
 const usuarioLogado = true;
 const contaPaga = false;
-console.log(0 == false);
-console.log(contaPaga == 0)
-console.log(contaPaga === 0)
+console.log(0 == false); //true
+console.log(contaPaga == 0) //true
+console.log(contaPaga === 0) //false
+console.log("" == false) //true
+console.log(1 == true) //true
+
+// Nulo e indefinido
+//Nulo = vazio ou nada (tem valor)
+
+let Gustavo;
+let Vini = null;
+let numero = 24;
+let texto = "odeio chuchu e berinjela"
+
+//  consultando tipo de variaveis
+
+console.log(typeof Gustavo)
+console.log(typeof Vini)
+console.log(typeof numero)
+console.log(typeof texto)
+
+// conversao de variavel
+
+const numberNumero = 657;
+const stringNumero = "657"
+
+console.log(numberNumero == stringNumero) // compara apenas o valor numerico
+console.log(numberNumero === stringNumero) // compara o tipo de variavel
+console.log(numberNumero + stringNumero) //concatenaçao
+console.log(numberNumero + Number(stringNumero)) // soma de numeros(string convertida em Number)
